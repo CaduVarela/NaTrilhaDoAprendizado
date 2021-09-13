@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RDE08</title>
+        <style>
+            #bonk tr td {
+                padding: 0 10px;
+                text-align: center;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- SUMÁRIO -->
+        <h1 id="sumario">Sumário</h1>
+        <p>Sumário para facilitar a navegação dentro da página.</p>
+        <ul>
+            <li><a href="#tag_table">Tag table</a></li>
+            <li><a href="#tag_del_ins">Tags del e ins</a></li>
+            <li><a href="#tag_sub_sup">Tag sub e sup</a></li>
+            <li><a href="#tag_q_blockquote_cite">Tags q, blockquote e cite</a></li>
+            <li><a href="#tag_abbr">Tag abbr</a></li>
+            <li><a href="#tag_address">Tag address</a></li>
+            <li><a href="#tag_code">Tag code</a></li>
+            <li><a href="#tag_pre">Tag pre</a></li>
+            <li><a href="#tag_bdo">Tag bdo</a></li>
+            <li><a href="#tag_kbd">Tag kbd</a></li>
+        </ul>
+
+        <!-- INTRODUÇÃO -->
+        <h1>Outras tags HTML</h1>
+        <p>Explicando e exemplificando o uso de algumas outras tags utilizadas em HTML.</p>
+
+        <!-- TAGS -->
+        <!--Tag table-->
+        <h2 id="tag_table">Tag table</h2>
+        <p>A tag <code>&lt;table&gt;</code> é uma tag que <b>exige</b> fechamento, ou seja, precisa de <code>&lt;/table&gt;</code>, e serve para criar tabelas em HTML.</p>
+        <p>Para utilizar o table, é necessário saber de duas outras tags importantes, <code><b>&lt;tr&gt;</b></code> e <code><b>&lt;td&gt;</b></code>, que também exigem fechamento:</p>
+
+        <ul>
+            <li><code>&lt;tr&gt;</code> &rarr; <i>table row</i> &rarr; linha da tabela (linha);</li>
+            <li><code>&lt;td&gt;</code> &rarr; <i>table data</i> &rarr; dado da tabela (coluna).</li>
+        </ul>
+
+        <p>Por exemplo, observe o seguinte código:</p>
+        <code>
+            <pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;[linha1/dado1]&lt;/td&gt;
+        &lt;td&gt;[linha1/dado2]&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;[linha2/dado1]&lt;/td&gt;
+        &lt;td&gt;[linha2/dado2]&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+            </pre>
+        </code>
+
+        <p>Isso gera uma tabela como:</p>
+        <table>
+            <tr>
+                <td>[linha1/dado1]</td>
+                <td>[linha1/dado2]</td>
+            </tr>
+            <tr>
+                <td>[linha2/dado1]</td>
+                <td>[linha2/dado2]</td>
+            </tr>
+        </table>
+        <p><i>OBS: sem utilizar CSS</i></p>
+
+        <h3>extra</h3>
+
+        <p>A tag <code>&lt;td&gt;</code> pode receber atributos para ocupar mais de um espaço de dado utilizando o seguinte:</p>
+
+        <ul>
+            <li><code>&lt;td rowspan="X"&gt;&lt;/td&gt;</code> &rarr; utilizado para ocupar X linhas na tabela;</li>
+            <li><code>&lt;td colspan="X"&gt;&lt;/td&gt;</code> &rarr; utilizado para ocupar X colunas na tabela.</li>
+        </ul>
+        <p><i>OBS: <b>X</b> representa um número inteiro e positivo</i></p>
+
+        <p>Observe o seguinte exemplo onde "A" tem rowspan="2" e "F" tem colspan="2"</p>
+        <table id="bonk">
+            <tr>
+                <td rowspan="2">A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td colspan="2">F</td>
+            </tr>
+        </table>
+        <p><i>OBS: CSS utilizado para efeitos de demonstração visual</i></p>
+        <p><a href="#sumario">voltar ao sumário</a></p>
+
+        <!--Tags del e ins-->
+        <h2 id="tag_del_ins">Tags del e ins</h2>
+        <p>As tags <code>&lt;del&gt;</code> e <code>&lt;ins&gt;</code> necessitam fechamento e servem para indicar partes removidas (deletadas) e adicionadas (inseridas), respectivamente. Por padrão, quando utilizado, o texto dentro de <i>del</i> fica riscado no resultado final, ao passo que dentro de <i>ins</i> fica sublinhado.</p>
+        <p>Vamos ao exemplo, observe o seguinte código:</p>
+        <code>
+            <p>&lt;p&gt;Essa parte foi &lt;del&gt;removida&lt;/del&gt; &lt;/ins&gt;adicionada&lt;/ins&gt;&lt;/p&gt;</p>
+        </code>
+        <p>Isso gera o seguinte resultado:</p>
+        <p>Essa parte foi <del>removida</del> <ins>adicionada</ins></p>
+        <p><a href="#sumario">voltar ao sumário</a></p>
+
+        <!--Tag sub e sup-->
+        <h2 id="tag_sub_sup">Tag sub e sup</h2>
+        <p>As tags <code>&lt;sub&gt;</code> e <code>&lt;sup&gt;</code> necessitam fechamento e servem para elevar e abaixar um elemento na linha, respectivamente. Observe o código a seguir:</p>
+        <code>
+            <p>&lt;p&gt;A&lt;sub&gt;1&lt;/sub&gt; = 5&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;</p>
+        </code>
+        <p>Esse código gera o seguinte resultado:</p>
+        <p>A<sub>1</sub> = 5<sup>2</sup></p>
+        <p><a href="#sumario">voltar ao sumário</a></p>
+
+        <!--Tags q, blockquote e cite-->
+        <h2 id="tag_q_blockquote_cite">Tags q, blockquote e cite</h2>
+        <p>As tags <code>&lt;q&gt;</code>, <code>&lt;blockquote&gt;</code> e <code>&lt;cite&gt;</code> necessitam fechamento e servem todas para fazer sitações, mas cada uma com suas particularidades:</p>
+
+        <ul>
+            <li><code>&lt;q&gt;</code> &rarr; <i>(quote)</i> fazer uma citação comum, geralmente curta;</li>
+            <li><code>&lt;blockquote&gt;</code> &rarr; citar uma informação já citada vinda de alguma fonte externa; (geralmente mais longas que as quotes);</li>
+            <li><code>&lt;cite&gt;</code> &rarr; citar uma obra (livro, pintura, música, etc.).</li>
+        </ul>
+
+        <p>observe os seguintes exemplos de q, blockquote e cite, respectivamente:</p>
+        <code>
+            <ol>
+                <li>
+                    <p>&lt;p&gt;&lt;q&gt;Só sei que nada sei&lt;/q&gt; ~Sócrates&lt;/p&gt;</p>
+                </li>
+                <li>
+                    <p>&lt;p&gt;Informação citada no site do Tecnoblog:&lt;/p&gt; <br>
+                    &lt;blockquote cite="https://tecnoblog.net/"&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deserunt obcaecati ducimus repellendus magnam maxime facilis culpa et veritatis quidem esse, iusto recusandae.&lt;/blockquote&gt;
+                    </p>
+                </li>
+                <li>
+                    <p>&lt;p&gt;&lt;cite&gt;O grito&lt;/cite&gt; foi um quadro pintado por Edward Munch em 1893.&lt;/p&gt;</p>
+                </li>
+            </ol>
+        </code>
+        <p><i>OBS: O <u>cite</u> usado como atributo é usado para referenciar de onde vem a informação.</i></p>
+
+        <p>Resultados, em ordem:</p>
+        <ol>
+            <li>
+                <p><q>Só sei que nada sei</q> ~Sócrates</p>
+            </li>
+            <li>
+                <p>Informação citada no site do Tecnoblog:</p>
+                <blockquote cite="https://tecnoblog.net/">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deserunt obcaecati ducimus repellendus magnam maxime facilis culpa et veritatis quidem esse, iusto recusandae.</blockquote>
+            </li>
+            <li>
+                <p><cite>O grito</cite> foi um quadro pintado por Edward Munch em 1893.</p>
+            </li>
+        </ol>
+        <p><a href="#sumario">voltar ao sumário</a></p>
+        
+        <!--Tag abbr-->
+        <h2 id="tag_abbr">Tag abbr</h2>
+        <p>A tag <code>&lt;abbr&gt;</code> necessita fechamento e serve para dar uma "descrição" para uma sigla quando o usuário passar o mouse em cima dela. Para indicar essa descrição, é utilizado o atributo <i>title</i>, observe o código de exemplo a seguir:</p>
+        <code>
+            <p>&lt;p&gt;A &lt;abbr title="Organização das Nações Unidas"&gt;ONU&lt;/abbr&gt; foi formada em 1945.&lt;/p&gt;</p>
+        </code>
+        <p>Resultado do código: </p>
+        <p>A <abbr title="Organização das Nações Unidas">ONU</abbr> foi formada em 1945.</p>
+        <p><a href="#sumario">voltar ao sumário</a></p>
+
+        <!--Tag address-->
+        <h2 id="tag_address">Tag address</h2>
+        <p>A tag <code>&lt;address&gt;</code> necessita fechamento e serve para definir as informações de contato para o autor/dono de um  documento ou artigo.</p>
+        <p>Observe o seguinte código de exemplo:</p>
+        <code>
+            <pre>
+&lt;address&gt;
+Escrito por &lt;a href="mailto:joaozinho@exemplo.com"&gt;Joãozinho Pereira&lt;/a&gt;
+Telefone para contato: +55 42 912345678
+Cidade da Jabuticaba, Brasil
+&lt;/address&gt;
+            </pre>
+        </code>
+
+        <p>Confira o resultado do código:</p>
+        <p>
+            <address>
+                Escrito por <a href="mailto:joaozinho@exemplo.com">Joãozinho Pereira</a> <br>
+                Telefone para contato: +55 42 912345678 <br>
+                Cidade da Jabuticaba, Brasil
+            </address>
+        </p>
+        <p><a href="#sumario">voltar ao sumário</a></p>
+
+        <!--Tag code-->
+        <h2 id="tag_code">Tag code</h2>
+        <p>A tag <code>&lt;code&gt;</code> necessita fechamento e serve para escrever trechos de código na página, confira o exemplo no código a seguir:</p>
+        <code>
+            <p>&lt;p&gt;A tag &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt; é utilizada para quebrar linhas em HTML&lt;/p&gt;</p>
+        </code>
+        <p>Confira o resultado do código:</p>
+        <p>A tag <code>&lt;br&gt;</code> é utilizada para quebrar linhas em HTML</p>
+        <p><a href="#sumario">voltar ao sumário</a></p>
+
+        <!--Tag pre-->
+        <h2 id="tag_pre">Tag pre</h2>
+        <p>A tag &lt;pre&gt; necessita fechamento e serve para escrever um trecho com espaços predefinidos, observe no código de exemplo</p>
+        <code>
+            <pre>
+&lt;pre&gt;
+Lorem ipsum     dolor     sit amet,
+         consectetur 
+adipisicing        elit.
+&lt;/pre&gt;
+            </pre>
+        </code>
+
+        <p>Confira o resultado do código:</p>
+        <pre>
+Lorem ipsum     dolor     sit amet,
+         consectetur 
+adipisicing        elit.
+        </pre>
+        <p><i>OBS: Observe que os espaços que estavam no código não "somem" no resultado final, como deveria ocorrer normalmente (sem a tag <b>pre</b>)</i></p>
+        <p><a href="#sumario">voltar ao sumário</a></p>
+
+        <!--Tag bdo-->
+        <h2 id="tag_bdo">Tag bdo</h2>
+        <p>A tag &lt;bdo&gt; necessita fechamento e serve para indicar uma direção para um texto. Para indicar essa direção é utilizado o atributo <i>dir</i>, que pode receber dois valores (direções):</p>
+        <ul>
+            <li>ltr &rarr; <i>left to right</i> &rarr; esquerda para a direita;</li>
+            <li>rtl &rarr; <i>right to left</i> &rarr; direita para a esquerda.</li>
+        </ul>
+        <p>Observe o código de exemplo:</p>
+        <code>
+            &lt;p&gt;&lt;bdo dir="rtl"&gt;Esse texto vai ficar escrito da direita para a esquerda&lt;/bdo&gt;&lt;/p&gt;
+        </code>
+
+        <p>Confira o resultado do código:</p>
+        <p><bdo dir="rtl">Esse texto vai ficar escrito da direita para a esquerda</bdo></p>
+        <p><a href="#sumario">voltar ao sumário</a></p>
+
+        <!--Tag kbd-->
+        <h2 id="tag_kbd">Tag kbd</h2>
+        <p>A tag &lt;kbd&gt; necessita fechamento e serve para indicar/definir uma tecla do teclado.</p>
+        <p>Veja o exemplo em código:</p>
+        <code>
+            &lt;p&gt;No Windows você pode utilizar &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt; para copiar um texto, imagem ou arquivo.&lt;/p&gt;
+        </code>
+
+        <p>Confira o resultado do código:</p>
+        <p>No Windows você pode utilizar <kbd>Ctrl</kbd> + <kbd>C</kbd> para copiar um texto, imagem ou arquivo.</p>
+        <p><a href="#sumario">voltar ao sumário</a></p>
+    </body>
+</html>
