@@ -41,35 +41,51 @@
         <p>Para utilizar o table, é necessário saber de duas outras tags importantes, <code><b>&lt;tr&gt;</b></code> e <code><b>&lt;td&gt;</b></code>, que também exigem fechamento:</p>
 
         <ul>
-            <li><code>&lt;tr&gt;</code> &rarr; <i>table row</i> &rarr; linha da tabela (linha);</li>
-            <li><code>&lt;td&gt;</code> &rarr; <i>table data</i> &rarr; dado da tabela (coluna).</li>
+            <li><code>&lt;tr&gt;</code> &rarr; <i>table row</i> &rarr; linha da tabela (define linha);</li>
+            <li><code>&lt;th&gt;</code> &rarr; <i>table header</i> &rarr; Título/cabeçalho de uma coluna ou linha na tabela;</li>
+            <li><code>&lt;td&gt;</code> &rarr; <i>table data</i> &rarr; dado da tabela (define célula).</li>
         </ul>
+        <p><i>OBS: A tag <code>&lt;th&gt;</code> pode receber o atributo "scope" para indicar o sentido (direção) que o título aponta, usando o valor "col" para indicar coluna e "row" para indicar linha. Por padrão (se nenhum valor for informado) o atributo é carregado com o valor "col".</i></p>
 
         <p>Por exemplo, observe o seguinte código:</p>
         <code>
             <pre>
 &lt;table&gt;
     &lt;tr&gt;
-        &lt;td&gt;[linha1/dado1]&lt;/td&gt;
-        &lt;td&gt;[linha1/dado2]&lt;/td&gt;
+        &lt;th&gt;[Coluna1]&lt;/th&gt;
+        &lt;th&gt;[Coluna2]&lt;/th&gt;
+        &lt;th&gt;[Coluna3]&lt;/th&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-        &lt;td&gt;[linha2/dado1]&lt;/td&gt;
-        &lt;td&gt;[linha2/dado2]&lt;/td&gt;
+        &lt;th&gt;[linha1]&lt;/th&gt;
+        &lt;td&gt;[dado1]&lt;/td&gt;
+        &lt;td&gt;[dado2]&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;[linha2]&lt;/th&gt;
+        &lt;td&gt;[dado1]&lt;/td&gt;
+        &lt;td&gt;[dado2]&lt;/td&gt;
     &lt;/tr&gt;
 &lt;/table&gt;
             </pre>
         </code>
 
-        <p>Isso gera uma tabela como:</p>
+        <p>Esse código gera uma tabela como:</p>
         <table>
             <tr>
-                <td>[linha1/dado1]</td>
-                <td>[linha1/dado2]</td>
+                <th scope="col">[Coluna1]</th>
+                <th scope="col">[Coluna2]</th>
+                <th scope="col">[Coluna3]</th>
             </tr>
             <tr>
-                <td>[linha2/dado1]</td>
-                <td>[linha2/dado2]</td>
+                <th scope="row">[Linha1]</th>
+                <td>[dado1]</td>
+                <td>[dado2]</td>
+            </tr>
+            <tr>
+                <th scope="row">[Linha2]</th>
+                <td>[dado1]</td>
+                <td>[dado2]</td>
             </tr>
         </table>
         <p><i>OBS: sem utilizar CSS</i></p>
