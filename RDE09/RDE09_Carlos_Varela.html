@@ -12,6 +12,7 @@
 
         <h2>Tag iframe</h2>
         <p>A tag <code>&lt;iframe&gt;</code> é usada para incorporar outro documento ao documento HTML.</p>
+        
         <h3>Sintaxe: </h3>
         <p><code>&lt;iframe src="URL" height="altura" width="largura" title="título"&gt;&lt;/iframe&gt;</code></p>
 
@@ -23,6 +24,59 @@
 
         <h3>Exemplo de iframe incorporando vídeo:</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/fYJl-7jRzuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Tag video</h2>
+        <p>A tag <code>&lt;video&gt;</code> serve para exibir arquivos de vídeo hospedados em seu servidor.</p>
+        
+        <h3>Sintaxe: </h3>
+        <p><pre><code>&lt;video poster="URLImagem" controls&gt;
+    &lt;source src="URLVideo" type="video/tipo"&gt;
+    &lt;source src="URLVideo2" type="video/tipo2"&gt;
+    // só é necessário 1, os outros servem como outra opção caso o vídeo 
+    // anterior não carregue (podem haver mais extra)
+&lt;/video&gt;</code></pre></p>
+
+        <h3>Exemplo de video:</h3>
+        <video poster="./midias/video/Bike.jpg" controls width="560">
+            <source src="./midias/video/_Bike.mp4" type="video/mp4">
+            <source src="./midias/video/Bike.webm" type="video/webm">
+            <source src="./midias/video/Bike.ogv" type="video/ogv">
+        </video>
+
+        <h2>Tag audio</h2>
+        <p>A tag <code>&lt;audio&gt;</code> serve para exibir arquivos de áudio hospedados em seu servidor.</p>
+        
+        <h3>Sintaxe</h3>
+        <p><pre><code>&lt;audio preload="metadata" controls&gt;
+    &lt;source src="URL1" type="audio/tipo1"&gt;
+    &lt;source src="URL2" type="audio/tipo2"&gt;
+    // só é necessário 1, os outros servem como outra opção caso o vídeo 
+    // anterior não carregue (podem haver mais extra)
+&lt;/audio&gt;</code></pre></p>
+
+        <h3>Exemplo de audio:</h3>
+        <audio preload="metadata" controls>
+            <source src="./midias/audio/Hey Sailor - Letter Box.mp3" type="audio/mp3">
+            <source src="./midias/audio/Hey Sailor - Letter Box.ogg" type="audio/ogg">
+            <source src="./midias/audio/Hey Sailor - Letter Box.wav" type="audio/wav">
+        </audio>
+
+        <h2>Tag picture</h2>
+        <p>A tag <code>&lt;picture&gt;</code> serve para definir imagens de tamanhos diferentes de acordo com o tamanho da tela. Funciona com <b>responsividade</b></p>
+        
+        <h3>Sintaxe:</h3>
+        <p><pre><code>&lt;picture&gt;
+    &lt;source media="(max-width:tamanho1 px)" srcset="URL_Imagem_Pequena"&gt;
+    &lt;source media="(max-width:tamanho2 px)" srcset="URL_Imagem_Media"&gt;
+    &lt;img src="URL_Imagem_Grande" alt="Descição imagem"&gt;
+&lt;/picture&gt;</code></pre></p>
+
+        <picture>
+            <source media="(max-width:500px)" srcset="./midias/img/bike_110.jpg">
+            <source media="(max-width:700px)" srcset="./midias/img/bike_320.jpg">
+            <source media="(max-width:1000px)" srcset="./midias/img/bike_640.jpg">
+            <img src="./midias/img/bike_full.jpg" alt="Mtb Por-do-Sol">
+        </picture>
 
     </body>
 </html>
