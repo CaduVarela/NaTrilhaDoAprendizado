@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./img/icone_css3.png">
+        <title>RDE10 - CSS</title>
+    </head>
+    <body>
+        <!--CSS-->
+        <h1>CSS</h1>
+        <p><b>Cascading Style Sheets</b> - Folhas de Estilo em Cascata - tem por objetivo <b>realizar a estilização</b> de conteúdo de documentos HTML. Podem definir cores, fontes, espaçamentos, dentre outros.</p>
+
+        <!--Sintaxe-->
+        <h2>Sintaxe</h2>
+        <pre><code>seletor {
+    propriedades: valor; /*<i>comentário</i>*/
+    pripriedades-subpropriedades: valor;
+}</p></code></pre>
+
+        <h3>Exemplo</h3>
+        <pre><code>p {
+    color: blue;
+    text-align: center;
+}</code></pre>
+
+        <!--Componentes-->
+        <h2>Componentes</h2>
+        <ul>
+            <li><b>Seletores</b> - Seleciona elementos HTML com base no nome do elemento ao qual o estilo será aplicado.</li>
+            <li><b>Propriedades</b> - O aspecto específico do elemento que você quer usar como estilo.</li>
+            <li><b>Valores</b> - A configuração aplicada ao atributo.</li>
+        </ul>
+
+        <!--Formas de Utilização-->
+        <h2>Formas de Utilização</h2>
+        <p>Existem três formas de utilizar o CSS</p>
+        <table border="1">
+            <tr>
+                <th rowspan="2">Inline</th>
+                <td rowspan="2">
+                    <ul>
+                        <li>Os códigos CSS são definidos <b>dentro de uma <i>tag HTML.</i></b></li> <br>
+                        <li>Afetam somente a tag em que foi definida</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th rowspan="2">Incorporado</th>
+                <td rowspan="2">
+                    <ul>
+                        <li>Os códigos CSS são definidos no cabeçalho, <b>dentro de uma <i>tag head.</i></b></li> <br>
+                        <li>Afetam somente o documento em que foi definido</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th rowspan="2">Externo</th>
+                <td rowspan="2">
+                    <ul>
+                        <li>Os códigos CSS são definidos <b>dentro de uma <i>tag HTML</i></b></li> <br>
+                        <li>Afetam somente a tag em que foi definida</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <!--Implementações-->
+        <h3>Exemplos de diferentes implementações com essa página de base</h3>
+        
+        <p><a href="./RDE10_CSS_inline.html">Utilizando método de css inline</a></p>
+        <iframe src="./RDE10_CSS_inline.html" width="80%" height="500px"></iframe>
+
+        <p><a href="./RDE10_CSS_incorporado.html">Utilizando método de css incorporado</a></p>
+        <iframe src="./RDE10_CSS_incorporado.html" width="80%" height="500px"></iframe>
+
+        <p><a href="./RDE10_CSS_externo.html">Utilizando método de css externo</a></p>
+        <iframe src="./RDE10_CSS_externo.html" width="80%" height="500px" ></iframe>
+    </body>
+</html>

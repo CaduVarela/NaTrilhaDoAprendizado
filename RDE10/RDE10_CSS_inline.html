@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./img/icone_css3.png">
+        <title>RDE10 - CSS Inline</title>
+    </head>
+    <body style="background-color: rgb(237, 247, 224); font-family: Arial, Helvetica, sans-serif;">
+        <!--CSS-->
+        <h1 style="color: green; background-color: darkseagreen; text-align: center;">Cascading Style Sheets</h1>
+        
+        <!--Definição-->
+        <h2 style="color: darkgreen;">Definição</h2>
+        <p style="font-size: 20px;"><b>Cascading Style Sheets</b> - Folhas de Estilo em Cascata - tem por objetivo <b>realizar a estilização</b> de conteúdo de documentos HTML. Podem definir cores, fontes, espaçamentos, dentre outros.</p>
+
+        <!--Sintaxe-->
+        <h2 style="color: darkgreen;">Sintaxe</h2>
+        <pre><code style="display: block; padding: 10px; border-radius: 10px; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, .2);">seletor {
+    propriedades: valor; /*<i>comentário</i>*/
+    pripriedades-subpropriedades: valor;
+}</p></code></pre>
+
+        <h3 style="color: seagreen;">Exemplo</h3>
+        <pre><code style="display: block; padding: 10px; border-radius: 10px; color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, .2);">p {
+    color: blue;
+    text-align: center;
+}</code></pre>
+
+        <!--Componentes-->
+        <h2 style="color: darkgreen;">Componentes</h2>
+        <ul>
+            <li><b>Seletores</b> - Seleciona elementos HTML com base no nome do elemento ao qual o estilo será aplicado.</li>
+            <li><b>Propriedades</b> - O aspecto específico do elemento que você quer usar como estilo.</li>
+            <li><b>Valores</b> - A configuração aplicada ao atributo.</li>
+        </ul>
+
+        <!--Formas de Utilização-->
+        <h2 style="color: darkgreen;">Formas de Utilização</h2>
+        <p style="font-size: 20px;">Existem três formas de utilizar o CSS</p>
+        <table style="font-size: 15px;">
+            <tr style="display: block; border: 1px solid darkseagreen;">
+                <th rowspan="2" style="background-color: darkseagreen; color: green; width: 100px;">Inline</th>
+                <td rowspan="2">
+                    <ul>
+                        <li>Os códigos CSS são definidos <b>dentro de uma <i>tag HTML.</i></b></li> <br>
+                        <li>Afetam somente a tag em que foi definida</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr style="display: block; border: 1px solid darkseagreen;">
+                <th rowspan="2" style="background-color: darkseagreen; color: green; width: 100px;">Incorporado</th>
+                <td rowspan="2">
+                    <ul>
+                        <li>Os códigos CSS são definidos no cabeçalho, <b>dentro de uma <i>tag head.</i></b></li> <br>
+                        <li>Afetam somente o documento em que foi definido</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr style="display: block; border: 1px solid darkseagreen;">
+                <th rowspan="2" style="background-color: darkseagreen; color: green; width: 100px;">Externo</th>
+                <td rowspan="2">
+                    <ul>
+                        <li>Os códigos CSS são definidos <b>dentro de uma <i>tag HTML</i></b></li> <br>
+                        <li>Afetam somente a tag em que foi definida</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

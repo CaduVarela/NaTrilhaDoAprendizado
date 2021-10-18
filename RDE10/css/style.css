@@ -1,0 +1,44 @@
+body {
+    background-color: lightgray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+}
+
+h1 {
+    background-color: lightslategray;
+    color: lightgray;
+    text-align: center;
+    font-size: 28px;
+}
+
+h2 {
+    color: darkslategray;
+}
+
+h3 {
+    color: slategray;
+}
+
+ul {
+    color: rgb(51, 51, 51);
+}
+
+code {
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, .2);
+    font-size: 10pt;
+}
+
+tr {
+    display: block;
+    border: 1px solid lightslategray;
+}
+
+th {
+    background-color: lightslategray;
+    color: lightgray;
+    width: 100px;
+}
