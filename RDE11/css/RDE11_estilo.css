@@ -103,7 +103,7 @@ h3::selection {
     background: yellow;
 }
 
-p:first-letter {
+p::first-letter {
     color: red;
     font-size: xx-large;
 }
