@@ -1,0 +1,109 @@
+div {
+    background-color: purple;
+    margin: 10px;
+}
+
+span.negrito {
+    font-weight: bold;
+}
+
+span.sublinha {
+    text-decoration: underline;
+}
+
+h1#principal {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgb(83, 85, 109);
+    background-color: rgb(225, 199, 250);
+    border: 2px solid rgb(83, 85, 109);
+}
+
+div.agrupamento {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(39, 7, 70);
+    background-color: rgba(185, 111, 255, 0.2);
+    border: 2px solid rgb(83, 85, 109);
+    margin: 20px;
+    padding: 10px;
+}
+
+.exemplo1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: darkblue;
+    border: 1px solid cadetblue;
+    margin: 10px;
+    padding: 10px;
+    width: 80px;
+    height: 30px;
+}
+
+.exemplo2 {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(208, 211, 8);
+    border: 1px solid orange;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+}
+
+.personalizado {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(223, 217, 248, 0.616);
+    border: 2px solid gray;
+    margin: 10px;
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+
+.personalizado:hover {
+    color: rgb(29, 7, 70);
+    background: rgba(88, 28, 145, 0.4);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+a:link {
+    color: darkseagreen;
+}
+
+a:hover {
+    color: greenyellow;
+}
+
+a:active {
+    color: rgb(231, 59, 59);
+}
+
+a:visited {
+    color: darkgreen;
+}
+
+.pseudo {
+    background-color: rgba(63, 20, 104, 0.5);
+    border: 1px solid rgb(83, 85, 109);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.pseudo span.exemplo {
+    display: none;
+}
+
+.pseudo:hover > span.exemplo {
+    display: block;
+    margin: 10px 0;
+    background-color: dark;
+}
+
+h3::selection {
+    color: red;
+    background: yellow;
+}
+
+p:first-letter {
+    color: red;
+    font-size: xx-large;
+}
