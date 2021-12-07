@@ -25,7 +25,8 @@ h2 {
 }
 
 h3 {
-
+    color: #526579;
+    font-size: 16pt;
 }
 
 #background {
@@ -50,8 +51,10 @@ header {
 }
 
 .logo img {
-    width: 30%;
+    width: 25%;
     margin-top: 50px;
+    min-width: 400px;
+    aspect-ratio: 6;
 }
 
 /* navbar */

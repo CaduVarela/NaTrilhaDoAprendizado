@@ -42,7 +42,7 @@ header {
 .conteudo {
     float: left;
     margin: 15px 2px 25px ;
-    background-color: #F7F7FF;
+    background-color: gainsboro;
     width: 30.5%;
     text-align: justify;
     padding: 15px;
