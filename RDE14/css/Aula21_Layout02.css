@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #0b1726, #1f3d64);
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #161616;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.logo img {
+    width: 45%;
+    padding-top: 50px;
+}
+
+.navegacao {
+    overflow: hidden; /*Ajusta o conteúdo no box e esconde a barra de rolagem*/
+}
+
+.navegacao a {
+    float: right;
+    display: block;
+    color: #adadad;
+    text-decoration: none;
+    text-align: right;
+    padding: 10px;
+    transition: color .15s, background-color .2s;
+}
+
+.navegacao a:hover {
+    color: #E32936;
+    color: #FE5F55;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.conteudo {
+   float: left;
+   padding: 14px; 
+}
+
+.conteudo.lateral {
+    width: calc(20% - 14px - 4px);
+    margin: 10px 2px 25px;
+    background-color: gainsboro;
+}
+
+.conteudo.central {
+    width: calc(60% - 60px);
+    margin: 10px 2px 25px;
+    background-color: gainsboro;
+}
+
+.principal h2 {
+    color: #2e4159;
+}
+
+.rodape {
+    display: block;
+    text-align: center;
+    color: darkgray;
+    width: 100%;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .principal, .conteudo.central, .conteudo.lateral {
+        width: 100%;
+        padding: 0;
+    }
+
+    .conteudo.central, .conteudo.lateral {
+        width: calc(100% - 20px);
+        margin: 0;
+        padding: 0 10px;
+        border-radius: 0;
+    }
+}
