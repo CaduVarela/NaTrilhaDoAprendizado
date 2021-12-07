@@ -63,7 +63,7 @@ header {
     overflow: hidden;
 }
 
-.navegacao a {
+.navegacao a, .navegacao a:visited {
     float: right;
     display: block;
     color: #adadad;
@@ -75,7 +75,6 @@ header {
 }
 
 .navegacao a:hover {
-    color: #E32936;
     color: #FE5F55;
     background-color: rgba(0, 0, 0, .5);
 }
@@ -125,6 +124,10 @@ a {
     color: #4174bb;
     padding: 2px;
     transition: 0.1s all;
+}
+
+a:active {
+    color: #FE5F55;
 }
 
 a:hover {
