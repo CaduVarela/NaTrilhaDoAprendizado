@@ -157,3 +157,9 @@ li {
     text-align: center;
     width: 100%;
 }
+
+/* Classes Gerais */
+
+.negrito {
+    font-weight: bold;
+}
