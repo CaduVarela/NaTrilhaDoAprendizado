@@ -30,7 +30,7 @@ if (media >= 9 && media <= 10) {
 
 document.write('<h1>Notas</h1>');
 for (var i=0; i<4; i++) {
-    document.write(`<p>Nota ${i+1}: ${nota[i]}</p>`);
+    document.write(`<p><span class="negrito">Nota ${i+1}</span>: ${nota[i]}</p>`);
 }
-document.write(`<p>Media: ${media}</p>`);
-document.write(`<h2>Coceito: ${conceito}</h2>`);
+document.write(`<p><span class="negrito">Media</span>: ${media}</p>`);
+document.write(`<h2>Coceito ${conceito}</h2>`);

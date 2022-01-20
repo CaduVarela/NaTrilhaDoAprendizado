@@ -1,7 +1,7 @@
 /* 1. Crie um script em que seja possível digitar a temperatura em Celsius, e seja exibida a
 temperatura convertida em Fahrenheit e Kelvin */
 
-var celsius = parseFloat(prompt('Digite uma temperatura em graus Celsius: ')) ? celsius : 0;
+var celsius = parseFloat(prompt('Digite uma temperatura em graus Celsius: ', 0));
 if (!celsius) {
     celsius = 0;
 }

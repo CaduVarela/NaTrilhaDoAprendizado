@@ -18,6 +18,6 @@ for (var i=0; i<5; i++) {
     }
 }
 
-document.write(`<p>Números: ${num}</p>`);
-document.write(`<p>Maior número: ${numMaior}</p>`);
-document.write(`<p>Menor número: ${numMenor}</p>`);
+document.write(`<p><span class="negrito">Números</span>: ${num}</p>`);
+document.write(`<p><span class="negrito">Maior número</span>: ${numMaior}</p>`);
+document.write(`<p><span class="negrito">Menor número</span>: ${numMenor}</p>`);

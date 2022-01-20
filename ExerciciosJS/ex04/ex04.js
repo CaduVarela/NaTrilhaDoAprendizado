@@ -13,5 +13,8 @@ for (var i=0; i<n; i++) {
     }
 }
 
-document.write('<h1>Serie de Fibonacci gerada</h1>');
-document.write(serieFibonaci);
+document.write('<h1>Serie de Fibonacci gerada</h1><p>'+serieFibonaci[0]);
+for (var i=1; i<serieFibonaci.length; i++) {
+    document.write(`, ${serieFibonaci[i]}`);
+}
+document.write('</p>');
