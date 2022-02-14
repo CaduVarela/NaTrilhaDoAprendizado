@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./../img/trilha_favicon.ico">
+        <link rel="stylesheet" href="./../css/estilo.css">
+        <title>DOM</title>
+        <script type="text/javascript" src="js/ex14.js"></script>
+    </head>
+    <body>
+        <div id="background"></div>
+        <!--Header-->
+        <header> 
+            <div class="logo">
+            <picture>
+                <a href="./../index.html">
+                    <img src="./../img/logo.png"  alt="logo">
+                </a>
+            </picture>
+            </div>
+            <nav>
+                <div class="navegacao"> 
+                    <a href="./sobre.html">Sobre</a>
+                    <a href="./conteudo.html">Conteúdo</a>
+                    <a href="./index.html">O Projeto</a>
+                </div>
+            </nav>
+        </header>
+        <!---->
+
+        <div id="background"></div>
+        <main>
+            <div class="principal">
+                <div class="conteudo">
+                    <h1>Manipulação de Formulários</h1>
+                    <p>Cria uma página HTML com formulários que permita inserir dois números e realizar a soma.</p>
+
+                    <form action="">
+                        <p>
+                            <label for="inputNumber01" width="200px">Digite o primeiro número </label>
+                            <input type="number" id="inputNumber01">
+                        </p>
+                        
+                        <p>
+                            <label for="inputNumber02" width="200px">Digite o segundo número </label>
+                            <input type="number" id="inputNumber02">
+                        </p>
+
+                        <p>
+                            <input type="button" value="Somar" onclick="somar()">
+                        </p>
+
+                        <div id="divResultado"></div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
