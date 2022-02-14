@@ -7,7 +7,7 @@
         <link rel="icon" href="./../../img/trilha_favicon.ico">
         <link rel="stylesheet" href="./../../css/estilo.css">
         <title>Na trilha do aprendizado</title>
-        <script src="./js/ex01.js"></script>
+        <script src="./js/ex02.js"></script>
     </head>
     <body>
         <div id="background"></div>
@@ -36,19 +36,21 @@
                 <div class="conteudo">
                     <a onclick="window.history.back()">voltar à página anterior</a>
 
-                    <p class="enunciado"><span class="negrito">Exercício</span>: Validar os campo. de data para que o usuário não deixe a data de nascimento em branco e limitar que a data de nascimento do usuário não seja posterior a 2010. Também deve ser validado o textarea limitando que o usuário deva digitar no mínimo 50 caracteres.</p>
+                    <p class="enunciado"><span class="negrito">Exercício</span>: Desenvolver um formulário com campos Login e Senha  e que apresente uma mensagem dizendo que o usuário pode ou não acessar o sistema. Deve também ser apresentada mensagem caso o usuário algum campo em branco.
+                        Como padrão Login é aluno e a senha é 1234. </p>
                     
-                    <h1>Preencha os Dados</h1>
-                    <form onsubmit="confirmar()">
+                    <h1>Acessar o Sistema</h1>
+                    <form onsubmit="verificarLogin();return false">
                         <div class="formGroup">
-                            <label for="inputDataNascimento">Data de nascimento</label>
-                            <input type="date" id="inputDataNascimento" name="inputDataNascimento" max="2010-12-31" required>
+                            <label for="inputLogin">Login</label>
+                            <input type="text" id="inputLogin" required>
                         </div>
                         <div class="formGroup">
-                            <label for="textAreaTexto">Escreva um breve texto</label>
-                            <textarea id="textAreaTexto" minlength="50" placeholder="mínimo de 50 caracteres"></textarea>
+                            <label for="inputPassword">Senha</label>
+                            <input type="password" id="inputPassword" required>
                         </div>
-                        <input type="submit" value="enviar">
+                        <div id="informar"></div>
+                        <input type="submit" value="entrar">
                     </form>
                 </div>
             </div>
