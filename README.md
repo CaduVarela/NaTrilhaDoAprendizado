@@ -1,2 +1,2 @@
 # NaTrilhaDoAprendizado
- Projeto realizado na disciplina de Desenvolvimento Web no ensino médio.
+ Projeto realizado na disciplina de Desenvolvimento Web durante o terceiro ano do ensino médio.
